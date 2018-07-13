@@ -1,4 +1,3 @@
-# coding: UTF-8
 import urllib
 from bs4 import BeautifulSoup
 import time
@@ -33,3 +32,4 @@ for page_num in range(total_page,78):
             file.write(str(count/2)+","+link.get('href')+","+"\n")
         
 file.close()
+
