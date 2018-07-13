@@ -8,5 +8,8 @@
     - 取ってこないことがあるため、正しく取れているか確認する必要あり(原因不明)
         - unscraped_df[link][count1].txtは取得できなかった動画のdf["link"][count1]が記載される
 
+### transcriptをスクレイピング
+近日公開！
+
 ### csvデータ
 - ted-link_video.csvは20180423時点のもの
