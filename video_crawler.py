@@ -7,7 +7,7 @@ url = "https://www.ted.com/talks?page="
 total_page = 77  ## 20180423で77まである
 count =0
 # csvファイル新規作成
-file = open('./ted-link_video.csv','a')
+file = open('./ted-link.csv','a')
 file.write("#,link\n")
 
 # スクレイビング開始

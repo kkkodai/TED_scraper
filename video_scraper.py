@@ -9,7 +9,7 @@ import re
 import time
 import sys
 
-df = pd.read_csv("./ted-link_video.csv")
+df = pd.read_csv("./ted-link.csv")
 print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
 print("参照するcsvのURLは以下になります")
 print(df["link"][:])

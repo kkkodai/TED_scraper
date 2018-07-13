@@ -12,4 +12,4 @@
 近日公開！
 
 ### csvデータ
-- ted-link_video.csvは20180423時点のもの
+- ted-link.csvは20180423時点のもの
