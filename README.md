@@ -9,7 +9,8 @@
         - unscraped_df[link][count1].txtは取得できなかった動画のdf["link"][count1]が記載される
 
 ### transcriptをスクレイピング
-近日公開！
+- script_scraper.py
+    - 日英の字幕文を獲得(タグ付き)
 
 ### csvデータ
 - ted-link.csvは20180423時点のもの
