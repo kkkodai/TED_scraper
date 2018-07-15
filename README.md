@@ -14,12 +14,15 @@
     - 取ってこないことがあるため、正しく取れているか確認する必要あり(原因不明)
         - notexist_numberを確認
 
+
 ### コーパス作成
+### 後日追加予定↓
 - script_regex.py
     - スクリプトの修正
 
 - make_corpus.py
     - script_regex.pyにより作成されたファイルから日英コーパスを作成
+
 
 ### データセット
 - ted-link.csvを使って作成
