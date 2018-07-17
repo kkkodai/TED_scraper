@@ -12,12 +12,9 @@ import sys
 
 def scr_ja():
     ### スクリプト保存用ディレクトリ作成
-    if os.path.isdir("./ted_script_ja"):
-        os.chdir("./ted_script_ja")
-    else:
+    if not os.path.isdir("./ted_script_ja"):
         os.mkdir("./ted_script_ja")
-        os.chdir("./ted_script_ja")
-
+        
     #for i in range(len(df)):
     for i in range(1133,len(df)):
         print(i)
@@ -26,7 +23,7 @@ def scr_ja():
         url = "https://www.ted.com/" + df["link"][i]+"/transcript?language=ja" 
         resp = requests.get(url)
         if resp.status_code == 200:
-            f2 = open(str(i)+"_"+df["link"][i].split("/")[-1]+".txt","w")
+            f2 = open("./ted_script_ja/"+str(i)+"_"+df["link"][i].split("/")[-1]+".txt","w")
             res = req.urlopen(url)
             soup = BeautifulSoup(res, 'html.parser')
             li_list = soup.find_all("p")
@@ -57,11 +54,9 @@ def scr_ja():
 
 def scr_en():
     ### スクリプト保存用ディレクトリ作成
-    if os.path.isdir("./ted_script_en"):
-        os.chdir("./ted_script_en")
-    else:
+    if not os.path.isdir("./ted_script_en"):
         os.mkdir("./ted_script_en")
-        os.chdir("./ted_script_en")
+
     ### 日本語訳分だけ取得したければcount_list1を用いる
     #for i in range(count_list1):
     for i in range(len(df)):
@@ -71,7 +66,7 @@ def scr_en():
         url = "https://www.ted.com/" + df["link"][i]+"/transcript" 
         resp = requests.get(url)
         if resp.status_code == 200:
-            f_en = open(str(i)+"_"+df["link"][i].split("/")[-1]+".txt","w")
+            f_en = open("./ted_script_en"+str(i)+"_"+df["link"][i].split("/")[-1]+".txt","w")
             res = req.urlopen(url)
             soup = BeautifulSoup(res, 'html.parser')
             li_list = soup.find_all("p")
